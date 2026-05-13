@@ -1,6 +1,7 @@
 # Hide&Seek PROctoring
 
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![C++](https://img.shields.io/badge/C++-7F3FBF?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![C](https://img.shields.io/badge/C-0D56A6?style=for-the-badge&logo=c&logoColor=white)
 
 *Проект по обходу системы прокторинга, путем сокрытия окна chrome.exe от демонстрации экрана*
 
