@@ -13,6 +13,7 @@ DWORD WINAPI CreateChromeThread(LPVOID lpParam) {
 		for (auto window : windows) {
 			SetWindowDisplayAffinity(window, WDA_EXCLUDEFROMCAPTURE);
 			hack::HideFromTaskBar(window);
+			SetWindowPos(window, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE);
 		}
 	} while (true);
 	
