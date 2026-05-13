@@ -22,7 +22,7 @@ int main() {
 		return -1;
 	}
 
-	std::string path = "C:\\Users\\maxma\\source\\repos\\MaxBelysh\\GoogleChromeHack\\x64\\Debug\\DLL.dll";
+	std::string path = "C:\\Users\\maxma\\source\\repos\\GoogleChromeHack\\x64\\Debug\\DLL.dll";
 
 	LPVOID PathAddress = VirtualAllocEx(ChromeProcess, NULL, strlen(path.c_str()) + 1, MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE);
 
