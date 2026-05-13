@@ -127,10 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dllResource.cpp" />
     <ClCompile Include="GoogleChromeInjector.cpp" />
     <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dllResource.h" />
     <ClInclude Include="includes.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>

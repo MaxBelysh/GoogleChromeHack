@@ -37,6 +37,11 @@ uint32_t utils::GetProcessIDByProcessName(const wchar_t* processName)
 
 bool utils::DropFileFromBuffer(std::wstring desired_file_name, const char* buffer_addr, size_t size)
 {
+	if (GetFileAttributesW(desired_file_name.c_str()) != INVALID_FILE_ATTRIBUTES)
+	{
+		return true;
+	}
+
 	std::ofstream file_ofstream(desired_file_name.c_str(), std::ios::out | std::ios::binary);
 
 	if (!file_ofstream.write(buffer_addr, size))
@@ -82,7 +87,8 @@ std::wstring utils::GetDllPath()
 		return L"";
 	}
 
-	return temp + L"\\" + utils::GetDllName();
+	cachedDllPath = temp + L"\\" + utils::GetDllName();
+	return cachedDllPath;
 }
 
 std::wstring utils::GetDllName()
@@ -102,6 +108,7 @@ std::wstring utils::GetDllName()
 			buffer[i] = alphabet[rand() % (sizeof(alphabet) - 1)];
 		}
 		std::string str(buffer);
+		str += ".dll";
 		std::wstring name(str.begin(), str.end());
 		cachedDllName = name;
 		return name;
