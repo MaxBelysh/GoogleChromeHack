@@ -4,8 +4,7 @@
 
 bool IsInjected = false;
 
-int inject() {
-	const wchar_t processname[] = L"chrome.exe";
+int inject(const wchar_t* processname) {
 
 	uint32_t processID = 0;
 
@@ -68,7 +67,9 @@ int inject() {
 
 int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd) {
 	while (true) {
-		inject();
+		inject(L"chrome.exe");
+		//inject(L"ScreenClippingHost.exe");
+		//inject(L"SnippingTool.exe");
 	}
 	
 }
