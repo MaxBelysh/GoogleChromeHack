@@ -57,6 +57,8 @@ int inject(const wchar_t* processname) {
 			return -1;
 		}
 
+		WaitForSingleObject(ChromeRemoteThread, INFINITE);
+		CloseHandle(ChromeRemoteThread);
 		CloseHandle(ChromeProcess);
 
 		IsInjected = true;
