@@ -1,23 +1,19 @@
 # Hide&Seek PROctoring
 
 ![C++](https://img.shields.io/badge/C++-7F3FBF?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![C](https://img.shields.io/badge/C-0D56A6?style=for-the-badge&logo=c&logoColor=white)
 
-*Проект по обходу системы прокторинга, путем сокрытия окна chrome.exe от демонстрации экрана*
+*Проект по обходу системы прокторинга, путем сокрытия окна chrome.exe от захвата экрана*
 
-## Builds
+## Сборка
 
-Открыть в Visual studio и build в сборке Release
+Открыть в Visual studio и build в версии Release
 
 ```bash
 git clone https://github.com/MaxBelysh/GoogleChromeHack.git
 ```
 
----
+**Назовите exe-файл как угодно** после сборки, для того, чтобы при проверке запущенных процессов к вам не возникло вопросов
 
-Или установите exe-файл из Github Releases, предварительно добавив exe-файл в исключения Windows defender или отключив защиту Windows
+## Установка
 
-```bash
-*.exe
-```
-**Назовите exe-файл как угодно*
+Перейти на страницу с [релизами](https://github.com/MaxBelysh/GoogleChromeHack/releases) и скачать готовую сборку
